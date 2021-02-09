@@ -4,9 +4,11 @@ import net.safronys.weblibrary.model.User;
 import net.safronys.weblibrary.repository.UserRepository;
 import net.safronys.weblibrary.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
 
