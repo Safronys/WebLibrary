@@ -36,7 +36,7 @@ public class UserRestController {
 
     @RequestMapping(value = "", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> addUser(@RequestBody User user) {
-        this.userService.add(user);
+        this.userService.addUser(user);
         return new ResponseEntity<>(user,HttpStatus.CREATED);
     }
 
@@ -48,7 +48,7 @@ public class UserRestController {
 
     @RequestMapping(value = "",method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> updateUser(@RequestBody User user){
-        this.userService.add(user);
+        this.userService.addUser(user);
         return new ResponseEntity<>(user,HttpStatus.OK);
     }
 }
